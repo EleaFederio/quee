@@ -17,15 +17,10 @@
     $result = $db->connect()->query($query);
     $asaas = $result->fetch_object();
     $_SESSION['quee'] = $asaas->id;
-    $username = $asaas->firstname; 
-    
-    if(isset($_GET['next']) && $_GET['next'] == 1 ){
-        $proceedId = $_SESSION['quee'];
-        $query = "UPDATE `register` SET `procced`=1 WHERE `id` = $proceedId";
-        if($db->connect()->query($query)){
-            header('location:index.php');
-        }
+    if($asaas == ''){
+        echo 'No more Quee';
     }
+    echo '#'.$asaas->id; 
 
     
 

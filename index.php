@@ -1,3 +1,6 @@
+<?php
+  include 'register.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,18 +14,18 @@
     
     <div class="container">
         <br><br>
-        <form>
+        <form action="index.php" method="POST">
             <div class="form-group">
               <label for="firstname">First Name</label>
-              <input type="text" class="form-control" id="firstname" placeholder="First Name">
+              <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name" required>
             </div>
             <div class="form-group">
               <label for="lastname">Last Name</label>
-              <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+              <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name" required>
             </div>
             <div class="form-group">
                 <label for="phonenumber">Phone Number</label>
-                <input type="text" class="form-control" id="phonenumber" placeholder="Phone Number">
+                <input type="text" class="form-control" id="phonenumber" name="phonenumber" placeholder="Phone Number" required>
               </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
