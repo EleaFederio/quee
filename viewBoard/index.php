@@ -10,12 +10,19 @@
 </head>
 <body>
 
-    <div class="container">
-        <h1 class="h1 text-center" style="margin-top:10%">Serving BUGC Student</h1>
-        <div class="jumnotron">
-            <h1 class="h1 text-center" id="noti_number" style="font-size:20vw"></h1>
+    <div class="container-fluid">
+    <br><br>
+
+        <div class="card bg-light mb-3" style="max-width: 35rem;">
+        <div class="card-header text-center"><h3>Table 1</h3></div>
+        <div class="card-body">
+            <h5 class="card-title text-center">Now Serving Student</h5>
+            <h1 class="h1 text-center" id="noti_number" style="font-size:15vw"></h1>
         </div>
+        </div>
+
     </div>
+    
     
 
 
